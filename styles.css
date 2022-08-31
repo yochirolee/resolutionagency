@@ -171,17 +171,20 @@ header {
 	min-height: 700px;
 }
 
-.hero > .container {
+.section > .container {
 	display: flex;
 	flex-direction: column;
 	padding: 2rem 3rem;
 	justify-items: start;
 }
 
+.title {
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+}
+
 .hero-title {
 	color: var(--white);
-	font-size: 3rem;
-	margin-bottom: 15px;
 }
 
 .hero-subtitle {
@@ -214,6 +217,12 @@ header {
 img {
 	width: 100%;
 	height: auto;
+}
+
+/*---------about section --------*/
+
+.about-title {
+	color: var(--st-patricks-blue);
 }
 
 /*------------Animations--------------*/
@@ -263,14 +272,16 @@ img {
 		color: var(--white);
 	}
 
-	.hero > .container {
+	.section > .container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 2rem;
 		margin-top: 6rem;
 	}
-	.hero-title {
+	.title {
 		font-size: 5rem;
+       
+       
 	}
 
 	.hero-subtitle {
