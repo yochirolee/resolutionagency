@@ -197,14 +197,7 @@ header {
 }
 
 .hero-button {
-	padding: 1rem 3rem;
-	color: var(--white);
-	background-color: var(--amaranth-purple);
-	border-radius: 0rem 3rem;
-	font-size: 1.7rem;
-	font-weight: 500;
-	border: none;
-	margin: 0rem 1.5rem;
+	visibility: hidden;
 }
 
 img {
@@ -227,6 +220,19 @@ img {
 }
 /*------------Media Query--------------*/
 
+@media (min-width: 440px) {
+	.hero-button {
+		padding: 1rem 3rem;
+		color: var(--white);
+		background-color: var(--amaranth-purple);
+		border-radius: 0rem 3rem;
+		font-size: 1.7rem;
+		font-weight: 500;
+		border: none;
+		margin: 0rem 1.5rem;
+        visibility: visible;
+	}
+}
 @media (min-width: 992px) {
 	.container {
 		margin: 1rem 6rem;
