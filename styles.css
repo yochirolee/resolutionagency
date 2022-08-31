@@ -212,6 +212,21 @@ img {
 	height: auto;
 }
 
+/*------------Animations--------------*/
+.banner-animation {
+	animation: waveanim 1s linear infinite alternate;
+}
+
+@keyframes waveanim {
+	0% {
+		transform: translate(0, 0) rotate(0);
+	}
+	100% {
+		transform: translate(2px, 2px) rotate(1deg);
+	}
+}
+/*------------Media Query--------------*/
+
 @media (min-width: 992px) {
 	.container {
 		margin: 1rem 6rem;
