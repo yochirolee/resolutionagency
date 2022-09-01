@@ -113,7 +113,20 @@ header {
 .bars {
 	color: var(--white);
 	font-size: 2rem;
-	
+}
+
+.btn {
+	background-image: var(--gradient-2);
+	background-size: 200%;
+	color: var(--white);
+	padding: 12px 35px;
+	font-size: var(--fs-8);
+	font-weight: var(--fw-500);
+	border-radius: 0 25px;
+	transition: var(--transition-2);
+}
+.btn:is(:hover, :focus) {
+	background-position: right;
 }
 
 .overlay {
@@ -252,7 +265,47 @@ img {
 	border-radius: var(--radius-12);
 	font-size: 1.6rem;
 }
+/*----------------Footer------------------*/
+.footer-top {
+	background-image: url(../images/footer-bg.png), var(--gradient-1);
+	background-repeat: no-repeat;
+	background-position: center, center;
+	background-size: auto, 200%;
+	color: var(--white);
+}
 
+.footer-list-container {
+	display: flex;
+	justify-content: space-around;
+	flex-basis: content;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 1.3rem;
+}
+.social-link {
+	color: white;
+	font-size: 2.3rem;
+}
+.social-list {
+	display: flex;
+	gap: 4rem;
+    padding: 2rem;
+}
+.footer-list-container ul li a {
+	color: white;
+}
+
+address{
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer-bottom {
+    background-color: var(--space-cadet-2);
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+}
 /*------------Animations--------------*/
 .banner-animation {
 	animation: waveanim 1s linear infinite alternate;
