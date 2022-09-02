@@ -15,3 +15,8 @@ Object.values(navbarLinks).map((link) => {
 });
 el.addEventListener("click", () => handleToggle());
 overlay.addEventListener("click", () => handleToggle());
+
+const header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+	window.scrollY > 400 ? header.classList.add("active") : header.classList.remove("active");
+});

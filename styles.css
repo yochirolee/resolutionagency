@@ -89,6 +89,12 @@ header {
 	padding: 1rem 1rem;
 	z-index: 4;
 }
+
+header.active{
+	position: sticky;
+	background-color: var(--ksu-purple);
+	box-shadow: var(--shadow);
+}
 .container {
 	display: flex;
 	justify-content: space-between;
